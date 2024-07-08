@@ -1,0 +1,27 @@
+# 模型训练时使用的yam1配置文件。该文件说明了数据的地址和待训练的类别
+# 配置三个路径，分别对应训练数据、验证数据、测试数据的地址
+
+# 训练数据用于模型的训练
+train: ./ai_data/css-data/train/images
+# 验证数据用于模型训练过程中的评估和参数调试
+val: ./ai_data/css-data/valid/images
+# 测试数据用于模型预测
+test: ./ai_data/css-data/test/images
+
+# number of classes 训练检测类型
+nc: 10
+
+# class names
+# ames:['0','1','2','3','4','5','6','7','8','9’]
+# Hardhat-安全帽
+# Mask-日置
+# No-Hardhat-无安全帽
+# No-Mask-无口罩
+# No-Safety Vest-无安全背心#Person-人
+# Safety Cone-安全锥
+# Safety Cone
+# Safety Vest-安全背心
+# machinery -机械(挖掘机)
+# vehicle-车辆
+
+names: ['Hardhat', 'Mask', 'No-Hardhat', 'No-Mask', 'No-Safety Vest', 'Safety Cone', 'Safety Cone', 'Safety Vest', 'machinery', 'vehicle']

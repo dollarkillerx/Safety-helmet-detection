@@ -162,3 +162,8 @@ cython_debug/
 #.idea/
 .idea
 .vscode
+ai_data/
+*.zip
+*.tar
+*.exe
+runs/
